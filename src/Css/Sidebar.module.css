@@ -1,0 +1,29 @@
+.SideMenu {
+    position: fixed;
+    display: flex;
+    width: 50px;
+    background: #272e62;
+    height: 100%;    
+}
+
+.SideMenu ul {
+    float: left;
+    list-style: none;
+    font-size: 2vh;
+    padding-left: 0px;
+    text-align: left;
+}
+.SideMenu ul li {   
+    padding: 60px 0px 6px 15px;
+  text-decoration: none;
+  font-size: 2vh;
+   margin: 0px;
+   padding-left: 10px;
+text-align: center;
+}
+
+.SideMenu ul li:hover{   
+background-color: rgb(244, 12, 51);
+cursor: pointer;
+
+}
