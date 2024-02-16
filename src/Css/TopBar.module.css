@@ -1,0 +1,41 @@
+.navbar {
+    display: flex;
+    align-items: center;     
+    background-color: #172238;
+    box-shadow: 2px 4px black;
+  }
+  
+  .navbar .logo {
+    flex-grow: 1; 
+    color: aqua;
+    font-size: 5vh;
+    padding-left: 2vh;
+  }
+  .navbar input{
+    padding: 8px 10px;
+    border: 2px;
+    border-radius: 20px;
+    background-color: #2a3c61;
+    margin-left: 30px;
+    width: 20%;
+    text-align: left;
+    color: white;
+  }
+
+  .navbar ul {
+    display: flex;
+    list-style-type: none; 
+    padding: 0; 
+  }
+  
+  .navbar ul li {
+    margin-right: 20px;
+    font-size: 3vh;
+   
+  }
+
+
+    .navbar ul li:hover {
+    color: chartreuse;
+    cursor: pointer;
+  }
