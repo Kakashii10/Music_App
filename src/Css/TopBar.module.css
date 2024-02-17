@@ -1,9 +1,13 @@
 .navbar {
-    display: flex;
-    align-items: center;     
-    background-color: #172238;
-    box-shadow: 2px 4px black;
-  }
+  display: flex;
+  align-items: center;     
+  background-color: #172238;
+  box-shadow: 2px 4px black;
+  position: fixed; /* Fix the navbar position */
+  top: 0; 
+  width: 100%;
+  z-index: 999; /* Ensure it appears above other content */
+}
   
   .navbar .logo {
     flex-grow: 1; 
