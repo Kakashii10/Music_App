@@ -7,10 +7,10 @@ function SideBar() {
   return (
     <div className={sideStyle.SideMenu}>
         <ul >
-            <li><FaArrowTrendUp style={{'width': '30px', 'margin-top':'1px','height': '23px'}}/> Trend</li>
-            <li><GiLoveSong style={{'width': '30px', 'margin-top':'1px','height': '23px'}}/> Song</li>
-            <li><IoIosRadio style={{'width': '30px', 'margin-top':'1px','height': '23px'}}/> Radio</li>
-            <li><GiLoveSong style={{'width': '30px', 'margin-top':'1px','height': '23px'}}/>Genres</li>
+            <li><FaArrowTrendUp style={{'width': '30px', 'marginTop':'1px','height': '23px'}}/> Trend</li>
+            <li><GiLoveSong style={{'width': '30px', 'marginTop':'1px','height': '23px'}}/> Song</li>
+            <li><IoIosRadio style={{'width': '30px', 'marginTop':'1px','height': '23px'}}/> Radio</li>
+            <li><GiLoveSong style={{'width': '30px', 'marginTop':'1px','height': '23px'}}/>Genres</li>
         </ul>
     </div>
   )
