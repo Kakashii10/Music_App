@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styleMainSection from "../Css/MainSection.module.css";
+import style from "../Css/MainSection.module.css";
 import FetchAllData from "./FetchAllData";
 
 function MainSection() {
@@ -12,13 +12,13 @@ function MainSection() {
   return (
     <React.Fragment>
       <FetchAllData onReceiveFetchData={receiveFetchData} />
-      <div className={styleMainSection.mainBody}>
-        <div className={styleMainSection.wrapper}>
+      <div className={style.mainBody}>
+        <div className={style.wrapper}>
           {songs.length > 0 ? (
             songs.map((song) => (
-              <div className={styleMainSection.polaroid} key={song.id}>
+              <div className={style.polaroid} key={song.id}>
                 <img src={song.img} alt="Norway" style={{ width: "100%" }} />
-                <div className={styleMainSection.container}>
+                <div className={style.container}>
                   <p>{song.title}</p>
                 </div>
               </div>

@@ -1,24 +1,41 @@
-/* MainSection.module.css */
-
-.mainBody {
-  margin-left: 20px;
-  margin-top: 20px;
+.mainBody{
+  margin-left: 100px;
+  margin-top: 100px;
 }
-
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 20px;
-}
+display: grid;
+height: 100px;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));    
+column-gap: 20px;
+row-gap: 20%;
 
+}
 .polaroid {
   width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-  transition: all .2s ease-in-out;
+  max-width: 200px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+text-align: center;
+transition: all .2s ease-in-out;
+
+}
+
+.container {
+padding: 10px;
 }
 
 .polaroid:hover {
-  transform: scale(1.1);
-  cursor: pointer;
+transform: scale(1.1);
+cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust for even smaller screens */
+  }
 }
