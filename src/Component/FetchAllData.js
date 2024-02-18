@@ -10,19 +10,9 @@ function FetchAllData({ onReceiveFetchData }) {
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
-  }, []);
+  }, [onReceiveFetchData]); // Include onReceiveFetchData in the dependency array
 
-  return (
-    <div>
-      {/* {songs.map((song) => (
-        <div key={song.id}>
-          <p>ID: {song.id}</p>
-          <p>Title: {song.title}</p>
-          <img src={song.img} alt={song.title} />
-        </div>
-      ))} */}
-    </div>
-  );
+  return null; // This component doesn't render anything
 }
 
 export default FetchAllData;
