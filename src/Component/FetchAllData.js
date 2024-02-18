@@ -1,8 +1,8 @@
-import React, { useEffect} from "react";
+import React, { useEffect } from 'react';
 
-function FetchAllData({onReceiveFetchData} ) {
+function FetchAllData({ onReceiveFetchData }) {
   useEffect(() => {
-    fetch('https://musicapi.x007.workers.dev/search?q=Happy&searchEngine=gaama')
+    fetch("https://musicapi.x007.workers.dev/search?q=Happy&searchEngine=gaama")
       .then((response) => response.json())
       .then((data) => {
         onReceiveFetchData(data.response); // Update the state with the fetched songs
