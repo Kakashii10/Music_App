@@ -14,15 +14,18 @@ function MainSection() {
       <FetchAllData onReceiveFetchData={receiveFetchData} />
       <div className={styleMainSection.mainBody}>
         <div className={styleMainSection.wrapper}>
-         { songs.map((song)=>(
-            <div className={styleMainSection.polaroid}>
-            <img src={song.img} alt="Norway" style={{ width: "100%" }} />
-            <div className={styleMainSection.container}>
-              <p>{song.title}</p>
-            </div>
-          </div>
-          ))}
-       
+          {songs.length > 0 ? (
+            songs.map((song) => (
+              <div className={styleMainSection.polaroid} key={song.id}>
+                <img src={song.img} alt="Norway" style={{ width: "100%" }} />
+                <div className={styleMainSection.container}>
+                  <p>{song.title}</p>
+                </div>
+              </div>
+            ))
+          ) : (
+            <p>Loading...</p>
+          )}
         </div>
       </div>
     </React.Fragment>
