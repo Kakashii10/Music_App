@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styleMainSection from "../Css/MainSection.module.css";
-import banner from "./preview.png";
 import FetchAllData from "./FetchAllData";
 
 function MainSection() {
