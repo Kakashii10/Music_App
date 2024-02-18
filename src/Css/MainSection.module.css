@@ -1,24 +1,21 @@
-.mainBody{
-    margin-left: 100px;
-    margin-top: 50px;
+/* MainSection.module.css */
+
+.mainBody {
+  margin-left: 20px;
+  margin-top: 20px;
 }
+
 .wrapper {
   display: grid;
-  height: 100px;
-  grid-template-columns: repeat(5, 1fr);    
-  column-gap: 20px;
-  row-gap: 20%;
-  
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
 }
+
 .polaroid {
-  width: 200px;
+  width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   transition: all .2s ease-in-out;
-}
-
-.container {
-  padding: 10px;
 }
 
 .polaroid:hover {
