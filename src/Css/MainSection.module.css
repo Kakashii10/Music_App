@@ -10,6 +10,10 @@ column-gap: 20px;
 row-gap: 20%;
 
 }
+a{
+  text-decoration: none;
+  color: white;
+}
 .polaroid {
   width: 100%;
   max-width: 200px;

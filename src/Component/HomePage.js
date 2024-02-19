@@ -1,10 +1,8 @@
-// HomePage.jsx
-
-import React from 'react';
-import TopBar from './TopBar';
-import homeStyle from '../Css/Home.module.css';
-import SideBar from './SideBar';
-import MainSection from './MainSection';
+import React from "react";
+import TopBar from "./TopBar";
+import homeStyle from "../Css/Home.module.css";
+import SideBar from "./SideBar";
+import MainSection from "./MainSection";
 
 function HomePage() {
   return (

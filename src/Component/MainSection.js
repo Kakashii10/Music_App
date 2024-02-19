@@ -16,12 +16,14 @@ function MainSection() {
         <div className={style.wrapper}>
           {songs.length > 0 ? (
             songs.map((song) => (
-              <div className={style.polaroid} key={song.id}>
-                <img src={song.img} alt="Norway" style={{ width: "100%" }} />
-                <div className={style.container}>
-                  <p>{song.title}</p>
+              <a href={song.id}  key={song.id}>
+                <div className={style.polaroid} >
+                  <img src={song.img} alt="Norway" style={{ width: "100%" }} />
+                  <div className={style.container}>
+                    <p>{song.title}</p>
+                  </div>
                 </div>
-              </div>
+              </a>
             ))
           ) : (
             <p>Loading...</p>
