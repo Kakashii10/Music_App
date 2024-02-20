@@ -13,7 +13,7 @@ function HomePage() {
   };
 
   const getSearchSongName = (data) => {
-    if(data == ""){
+    if(data === ""){
       setSongName("happy");
     }else{
       setSongName(data);

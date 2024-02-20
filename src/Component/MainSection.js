@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import style from "../Css/MainSection.module.css";
 
 function MainSection({songs=[]}) {
