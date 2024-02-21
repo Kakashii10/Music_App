@@ -10,7 +10,7 @@ function FetchAllData({ onReceiveFetchData, songName }) {
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
-  }, [songName]); // Include onReceiveFetchData in the dependency array
+  }, [onReceiveFetchData,songName]); // Include onReceiveFetchData in the dependency array
 
   return null; // This component doesn't render anything
 }
