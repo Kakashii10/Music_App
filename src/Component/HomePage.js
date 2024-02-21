@@ -13,18 +13,15 @@ function HomePage() {
   };
 
   const getSearchSongName = (data) => {
-    if(data === ""){
-      setSongName("happy");
-    }else{
-      setSongName(data);
-    }
+    const searchName = data.trim();
+    setSongName(searchName || "happy");
   };
   return (
     <div className={homeStyle.body}>
-      <FetchAllData onReceiveFetchData={receiveFetchData} songName={songName} />
       <TopBar recevingSong={getSearchSongName} />
       <SideBar />
-      <MainSection songs={songs} />
+      <FetchAllData onReceiveFetchData={receiveFetchData} songName={songName} />
+      {songs.length > 0 && <MainSection songs={songs} />}
     </div>
   );
 }
