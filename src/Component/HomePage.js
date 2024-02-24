@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useCallback } from "react";
 import TopBar from "./TopBar";
 import homeStyle from "../Css/Home.module.css";
 import SideBar from "./SideBar";
@@ -8,9 +8,13 @@ import FetchAllData from "./FetchAllData";
 function HomePage() {
   const [songs, setSongs] = useState([]);
   const [songName, setSongName] = useState("happy");
-  const receiveFetchData = (data) => {
+  // const receiveFetchData = (data) => {
+  //   setSongs(data);
+  // };
+
+  const receiveFetchData = useCallback((data) => {
     setSongs(data);
-  };
+  }, [setSongs]);
 
   const getSearchSongName = (data) => {
     const searchName = data.trim();
