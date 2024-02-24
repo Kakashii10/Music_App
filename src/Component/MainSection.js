@@ -10,8 +10,8 @@ function MainSection({ songs = [] }) {
           {songs.length > 0 ? (
             songs.map((song) => (
               <div className={style.polaroid} key={song.id}>
-                <NavLink to={"/song/"+song.id}>
-                  <img src={song.img} alt="Norway" style={{ width: "100%" }} />
+                <NavLink to={`/song/${encodeURIComponent(JSON.stringify(song))}`}>
+                  <img src={song.img} alt="no image" style={{ width: "100%" }} />
                   <div className={style.container}>
                     <p>{song.title}</p>
                   </div>

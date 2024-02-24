@@ -13,7 +13,6 @@ function App() {
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact />} />
         <Route path="/song/:userId" element={<PlaySong/>}/>
-        {/* Add more routes here for other pages */}
       </Routes>
     </Router>
   );
