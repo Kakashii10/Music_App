@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import ReactHlsPlayer from "react-hls-player";
+import ReactHlsPlayer from 'react-hls-player';
 import style from '../Css/PlaySong.module.css';
 
 
